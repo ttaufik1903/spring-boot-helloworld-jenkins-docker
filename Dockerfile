@@ -5,4 +5,4 @@ WORKDIR app<br>
 RUN "pwd"<br>
 RUN "ls"<br>
 EXPOSE 8085<br>
-ENTRYPOINT ["java","-jar", "spring-boot-helloworld-jenkins-docker.jar "]
+ENTRYPOINT ["java","-jar", "spring-boot-helloworld-jenkins-docker.jar"]
