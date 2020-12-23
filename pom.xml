@@ -47,9 +47,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<image>
-						<name>spring-boot-helloworld-jenkins-docker</name>
-					</image>
+					<layers>
+						<enabled>true</enabled>
+					</layers>
 				</configuration>
 			</plugin>
 		</plugins>
