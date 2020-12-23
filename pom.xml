@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-helloworld-jenkins-docker</name>
 	<description>Dokcerize Spring Boot Application</description>
+	<url>http://maven.apache.org</url>
 
 	<properties>
 		<java.version>1.8</java.version>
