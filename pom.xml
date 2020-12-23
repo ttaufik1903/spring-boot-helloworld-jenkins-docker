@@ -17,8 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+ 	</properties>
 
 	<dependencies>
 		<dependency>
@@ -42,7 +41,7 @@
 	<build>
 
 		<finalName>spring-boot-helloworld-jenkins-docker</finalName>
-		<!-- <plugins>
+	  <plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -52,7 +51,7 @@
 					</layers>
 				</configuration>
 			</plugin>
-		</plugins> -->
+		</plugins>  
 		<!-- <plugins> <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> 
 			<version>2.3.2.RELEASE</version> <configuration> <mainClass>com.taufik.spring.boot.docker.jenkins.SpringBootHelloworldJenkinsDockerApplication</mainClass> 
 			<addResources>true</addResources> </configuration> <executions> <execution> 
