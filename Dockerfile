@@ -1,12 +1,5 @@
-FROM adoptopenjdk:11-jre-hotspot as builder
+FROM openjdk:8
 EXPOSE 9999
 ARG JAR_FILE
 COPY ${JAR_FILE} spring-boot-helloworld-jenkins-docker.jar
-RUN java -Djarmode=layertools -jar spring-boot-helloworld-jenkins-docker.jar extract
-
-FROM adoptopenjdk:11-jre-hotspot as builder
-COPY --from=builder dependencies/ ./
-COPY --from=builder snapshot-dependencies/ ./
-COPY --from=builder spring-boot-loader/ ./
-COPY --from=builder application/ ./
-ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
+ENTRYPOINT ["java", "-jar", "/spring-boot-helloworld-jenkins-docker.jar"]
