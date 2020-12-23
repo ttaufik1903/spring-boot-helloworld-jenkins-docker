@@ -1,4 +1,4 @@
 FROM openjdk:8
-EXPOSE 9999
-ADD target/spring-boot-helloworld-jenkins-docker.jar spring-boot-helloworld-jenkins-docker.jar
+ARG JAR_FILE=target/spring-boot-helloworld-jenkins-docker.jar
+COPY ${JAR_FILE} spring-boot-helloworld-jenkins-docker.jar
 ENTRYPOINT ["java","-jar","/spring-boot-helloworld-jenkins-docker.jar"]

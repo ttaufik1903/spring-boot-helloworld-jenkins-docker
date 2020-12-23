@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.0.RELEASE</version>
+		<version>2.0.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.taufik</groupId>
@@ -23,33 +23,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		 <dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
- 			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 	<build>
-
 		<finalName>spring-boot-helloworld-jenkins-docker</finalName>
-	  <plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<layers>
-						<enabled>true</enabled>
-					</layers>
-				</configuration>
-			</plugin>
-		</plugins>  
-		<!-- <plugins> <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> 
-			<version>2.3.2.RELEASE</version> <configuration> <mainClass>com.taufik.spring.boot.docker.jenkins.SpringBootHelloworldJenkinsDockerApplication</mainClass> 
-			<addResources>true</addResources> </configuration> <executions> <execution> 
-			<goals> <goal>repackage</goal> </goals> </execution> </executions> </plugin> 
-			</plugins> -->
 	</build>
 
 </project>
